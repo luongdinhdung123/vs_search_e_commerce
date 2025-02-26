@@ -136,16 +136,18 @@ def load_json_data(img_path, json_path):
 # item = load_json_data("db/jeans7.jpg")
 # print(item)
 
-def print_info(img_json) -> None:
+def get_info(img_json) -> str:
     str_name = f"""Name: {img_json.get("name")}"""
     str_price = f"""Price: {img_json.get("price")}"""
     str_type = f"""Type: {img_json.get("type")}"""
     str_size = f"""Size: {img_json.get("size")}"""
-    st.write(str_name)
-    st.write(str_type)
-    st.write(str_size)
-    st.write(str_price)
-    # st.write(f"{str_name}\n{str_type}\n{str_size}\n{str_price}")
+    final_info = f"""{str_name}\n{str_type}\n{str_size}\n{str_price}""" #mark down version
+    return final_info
+    # st.write(str_name)
+    # st.write(str_type)
+    # st.write(str_size)
+    # st.write(str_price)
+    # # st.write(f"{str_name}\n{str_type}\n{str_size}\n{str_price}")
 
 def main():
     """
@@ -208,16 +210,20 @@ def main():
                 #2 columns here
                 
                 for i, similar_image in enumerate(similar_images):
-                    col1, col2 = st.columns(2)
+                    col1, col2 = st.columns(spec=[1, 2], vertical_alignment="center")
                     image = Image.open(similar_image)
                     with col1:
                         st.image(image, caption=f"Similar Image {i + 1}", width=200)
-                        st.write(f"{similar_image}")
+                        # st.write(f"{similar_image}")
                     img_json = load_json_data(img_path=similar_image, json_path="data.json")
                     print(img_json)
                     # print(similar_image)
+                    data_info = get_info(img_json)
                     with col2:
-                        print_info(img_json)
+                        # st.markdown(f"<h3 style='text-align: center;'>{data_info}</h3>", unsafe_allow_html=True)
+                        all_info = data_info.split("\n")
+                        for info in all_info:
+                            st.write(info)
                     # st.write(f"Name: {img}")
                     # st.write(f"Price: {img_json.get("price")}")
                     # st.json(img_json, expanded=True)
