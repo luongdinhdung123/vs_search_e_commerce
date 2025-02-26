@@ -121,7 +121,7 @@ def init_session_state():
     if "image_paths" not in st.session_state:
         st.session_state.image_paths = None
 
-def load_json_data(img_path, json_path="/Users/luongdinhdung/Downloads/vs_search/ecommerce-visual-search/data.json"):
+def load_json_data(img_path, json_path):
     if os.path.exists(json_path):
         with open(json_path, "r", encoding="utf_8") as json_file:
             json_data = json.load(json_file)
@@ -137,15 +137,14 @@ def load_json_data(img_path, json_path="/Users/luongdinhdung/Downloads/vs_search
 # print(item)
 
 def print_info(img_json) -> None:
-    if (img_json is not None):
-        str_name = f"""Name: {img_json.get("name")}"""
-        str_price = f"""Price: {img_json.get("price")}"""
-        str_type = f"""Type: {img_json.get("type")}"""
-        str_size = f"""Size: {img_json.get("size")}"""
-        st.write(str_name)
-        st.write(str_type)
-        st.write(str_size)
-        st.write(str_price)
+    str_name = f"""Name: {img_json.get("name")}"""
+    str_price = f"""Price: {img_json.get("price")}"""
+    str_type = f"""Type: {img_json.get("type")}"""
+    str_size = f"""Size: {img_json.get("size")}"""
+    st.write(str_name)
+    st.write(str_type)
+    st.write(str_size)
+    st.write(str_price)
     # st.write(f"{str_name}\n{str_type}\n{str_size}\n{str_price}")
 
 def main():
@@ -214,7 +213,7 @@ def main():
                     with col1:
                         st.image(image, caption=f"Similar Image {i + 1}", width=200)
                         st.write(f"{similar_image}")
-                    img_json = load_json_data(img_path=similar_image)
+                    img_json = load_json_data(img_path=similar_image, json_path="data.json")
                     print(img_json)
                     # print(similar_image)
                     with col2:
