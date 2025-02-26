@@ -137,14 +137,15 @@ def load_json_data(img_path, json_path="/Users/luongdinhdung/Downloads/vs_search
 # print(item)
 
 def print_info(img_json) -> None:
-    str_name = f"""Name: {img_json.get("name")}"""
-    str_price = f"""Price: {img_json.get("price")}"""
-    str_type = f"""Type: {img_json.get("type")}"""
-    str_size = f"""Size: {img_json.get("size")}"""
-    st.write(str_name)
-    st.write(str_type)
-    st.write(str_size)
-    st.write(str_price)
+    if (img_json is not None):
+        str_name = f"""Name: {img_json.get("name")}"""
+        str_price = f"""Price: {img_json.get("price")}"""
+        str_type = f"""Type: {img_json.get("type")}"""
+        str_size = f"""Size: {img_json.get("size")}"""
+        st.write(str_name)
+        st.write(str_type)
+        st.write(str_size)
+        st.write(str_price)
     # st.write(f"{str_name}\n{str_type}\n{str_size}\n{str_price}")
 
 def main():
