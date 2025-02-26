@@ -1,0 +1,247 @@
+[
+    {
+        "name": "tshirt11j",
+        "size": "M",
+        "type": "Tshirt",
+        "price": 83.514,
+        "path": "db/tshirt11j.jpg"
+    },
+    {
+        "name": "sandals9",
+        "size": "M",
+        "type": "Sandals",
+        "price": 53.658,
+        "path": "db/sandals9.jpg"
+    },
+    {
+        "name": "tshirt3",
+        "size": "M",
+        "type": "Tshirt",
+        "price": 53.398,
+        "path": "db/tshirt3.jpg"
+    },
+    {
+        "name": "jeans3",
+        "size": "S",
+        "type": "Jeans",
+        "price": 45.145,
+        "path": "db/jeans3.jpg"
+    },
+    {
+        "name": "jeans2",
+        "size": "L",
+        "type": "Jeans",
+        "price": 133.181,
+        "path": "db/jeans2.jpg"
+    },
+    {
+        "name": "tshirt2",
+        "size": "L",
+        "type": "Tshirt",
+        "price": 65.314,
+        "path": "db/tshirt2.jpg"
+    },
+    {
+        "name": "sandals8",
+        "size": "L",
+        "type": "Sandals",
+        "price": 22.908,
+        "path": "db/sandals8.jpg"
+    },
+    {
+        "name": "jeans1",
+        "size": "S",
+        "type": "Jeans",
+        "price": 95.312,
+        "path": "db/jeans1.jpg"
+    },
+    {
+        "name": "tshirt1",
+        "size": "M",
+        "type": "Tshirt",
+        "price": 141.986,
+        "path": "db/tshirt1.jpg"
+    },
+    {
+        "name": "jeans5",
+        "size": "S",
+        "type": "Jeans",
+        "price": 170.005,
+        "path": "db/jeans5.jpg"
+    },
+    {
+        "name": "jeans4",
+        "size": "M",
+        "type": "Jeans",
+        "price": 159.465,
+        "path": "db/jeans4.jpg"
+    },
+    {
+        "name": "tshirt5",
+        "size": "M",
+        "type": "Tshirt",
+        "price": 95.085,
+        "path": "db/tshirt5.jpeg"
+    },
+    {
+        "name": "tshirt4",
+        "size": "S",
+        "type": "Tshirt",
+        "price": 152.301,
+        "path": "db/tshirt4.jpg"
+    },
+    {
+        "name": "tshirt6",
+        "size": "M",
+        "type": "Tshirt",
+        "price": 71.231,
+        "path": "db/tshirt6.jpg"
+    },
+    {
+        "name": "jeans6",
+        "size": "S",
+        "type": "Jeans",
+        "price": 141.361,
+        "path": "db/jeans6.jpg"
+    },
+    {
+        "name": "jeans7",
+        "size": "L",
+        "type": "Jeans",
+        "price": 43.296,
+        "path": "db/jeans7.jpg"
+    },
+    {
+        "name": "tshirt7",
+        "size": "M",
+        "type": "Tshirt",
+        "price": 20.037,
+        "path": "db/tshirt7.jpg"
+    },
+    {
+        "name": "jeans10",
+        "size": "M",
+        "type": "Jeans",
+        "price": 158.734,
+        "path": "db/jeans10.jpg"
+    },
+    {
+        "name": "sandals10",
+        "size": "M",
+        "type": "Sandals",
+        "price": 34.647,
+        "path": "db/sandals10.jpg"
+    },
+    {
+        "name": "tshirt14",
+        "size": "M",
+        "type": "Tshirt",
+        "price": 85.863,
+        "path": "db/tshirt14.jpg"
+    },
+    {
+        "name": "tshirt15",
+        "size": "M",
+        "type": "Tshirt",
+        "price": 141.418,
+        "path": "db/tshirt15.jpg"
+    },
+    {
+        "name": "sandals1",
+        "size": "S",
+        "type": "Sandals",
+        "price": 68.183,
+        "path": "db/sandals1.jpg"
+    },
+    {
+        "name": "sandals3",
+        "size": "L",
+        "type": "Sandals",
+        "price": 96.569,
+        "path": "db/sandals3.jpg"
+    },
+    {
+        "name": "tshirt9",
+        "size": "M",
+        "type": "Tshirt",
+        "price": 49.244,
+        "path": "db/tshirt9.jpg"
+    },
+    {
+        "name": "jeans9",
+        "size": "S",
+        "type": "Jeans",
+        "price": 48.868,
+        "path": "db/jeans9.jpg"
+    },
+    {
+        "name": "jeans8",
+        "size": "S",
+        "type": "Jeans",
+        "price": 24.472,
+        "path": "db/jeans8.jpg"
+    },
+    {
+        "name": "tshirt8",
+        "size": "M",
+        "type": "Tshirt",
+        "price": 30.366,
+        "path": "db/tshirt8.jpg"
+    },
+    {
+        "name": "sandals2",
+        "size": "M",
+        "type": "Sandals",
+        "price": 193.301,
+        "path": "db/sandals2.jpg"
+    },
+    {
+        "name": "sandals6",
+        "size": "M",
+        "type": "Sandals",
+        "price": 172.909,
+        "path": "db/sandals6.jpg"
+    },
+    {
+        "name": "tshirt12",
+        "size": "S",
+        "type": "Tshirt",
+        "price": 196.45,
+        "path": "db/tshirt12.jpg"
+    },
+    {
+        "name": "tshirt13",
+        "size": "M",
+        "type": "Tshirt",
+        "price": 104.972,
+        "path": "db/tshirt13.jpg"
+    },
+    {
+        "name": "sandals7",
+        "size": "L",
+        "type": "Sandals",
+        "price": 149.233,
+        "path": "db/sandals7.jpg"
+    },
+    {
+        "name": "sandals5",
+        "size": "S",
+        "type": "Sandals",
+        "price": 180.295,
+        "path": "db/sandals5.jpg"
+    },
+    {
+        "name": "tshirt10",
+        "size": "S",
+        "type": "Tshirt",
+        "price": 156.584,
+        "path": "db/tshirt10.jpg"
+    },
+    {
+        "name": "sandals4",
+        "size": "M",
+        "type": "Sandals",
+        "price": 99.023,
+        "path": "db/sandals4.jpg"
+    }
+]
