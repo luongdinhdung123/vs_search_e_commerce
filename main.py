@@ -18,7 +18,7 @@ TRAINED_DB_PATH = "db"
 os.environ['SSL_CERT_FILE'] = certifi.where()
 
 #load models
-@st.cache_resource
+@st.cache_resource #to load global resources, need to run ONLY ONCE, CAN'T STORE IN DATABASE
 def load_model() -> tf.keras.Model:
     """
     Load the pre-trained ResNet50 model.
@@ -163,8 +163,14 @@ def main():
 
     if st.session_state.feature_vectors is None:
         with st.spinner("Loading database..."):
-            st.session_state.feature_vectors, st.session_state.image_paths = get_feature_vectors_from_db(
-                TRAINED_DB_PATH, model)
+            # st.session_state.feature_vectors, st.session_state.image_paths = get_feature_vectors_from_db(
+            #     TRAINED_DB_PATH, model)
+
+            st.session_state.feature_vectors = np.load("all_pic.npy")
+            with open("data.json", "r", encoding = "utf-8") as f:
+                loaded_data = json.load(f)
+            
+            st.session_state.image_paths = [data["path"] for data in loaded_data if "path" in data]
             st.success("Database loaded successfully!")
     
     
